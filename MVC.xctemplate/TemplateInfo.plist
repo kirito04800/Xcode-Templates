@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Kind</key>
+  <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+  <key>Platforms</key>
+  <array>
+    <string>com.apple.platform.iphoneos</string>
+  </array>
+  <key>Options</key>
+  <array>
+    <dict>
+      <key>Identifier</key>
+      <string>productName</string>
+      <key>Required</key>
+      <true/>
+      <key>Name</key>
+      <string>View:</string>
+      <key>Description</key>
+      <string>The name of the View, controller and Model to create</string>
+      <key>Type</key>
+      <string>text</string>
+      <key>Default</key>
+      <string>MyView</string>
+    </dict>
+    <dict>
+      <key>Identifier</key>
+      <string>viewType</string>
+      <key>Required</key>
+      <true/>
+      <key>Name</key>
+      <string>View type:</string>
+      <key>Description</key>
+      <string>The type of view to use</string>
+      <key>Type</key>
+      <string>popup</string>
+      <key>Default</key>
+      <string>Storyboard</string>
+      <key>Values</key>
+      <array>
+        <string>Storyboard</string>
+        <string>XIB file</string>
+      </array>
+    </dict>
+    <dict>
+      <key>Identifier</key>
+      <string>generateXIBfile</string>
+      <key>Name</key>
+      <string>Also create a XIB file</string>
+      <key>Description</key>
+      <string>Whether to create a XIB file with the same name</string>
+      <key>Type</key>
+      <string>checkbox</string>
+      <key>RequiredOptions</key>
+      <dict>
+        <key>viewType</key>
+        <array>
+          <string>XIB file</string>
+        </array>
+      </dict>
+    </dict>
+    <dict>
+      <key>Identifier</key>
+      <string>generateStoryBoardFile</string>
+      <key>Name</key>
+      <string>Also create a StoryBoard file</string>
+      <key>Description</key>
+      <string>Create StoryBoard with same name</string>
+      <key>Type</key>
+      <string>checkbox</string>
+      <key>RequiredOptions</key>
+      <dict>
+        <key>viewType</key>
+        <array>
+          <string>Storyboard</string>
+        </array>
+      </dict>
+    </dict>
+  </array>
+</dict>
+</plist>
